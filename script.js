@@ -44,6 +44,7 @@ document.addEventListener('DOMContentLoaded', () => {
         } else {
             header.style.boxShadow = 'none';
             header.style.padding = '20px 0';
+        }
     });
 
     // Fetch and render markdown content
@@ -92,6 +93,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    loadMarkdown('about.md', 'about-content');
-    loadMarkdown('skills.md', 'skills-content', true);
+    loadMarkdown('content/about.md', 'about-content');
+    loadMarkdown('content/skills.md', 'skills-content', true);
 });
