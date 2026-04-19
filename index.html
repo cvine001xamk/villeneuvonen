@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Creative Developer</title>
+    <meta name="description" content="A showcase of my work and skills as a creative developer.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container header-container">
+            <a href="#" class="logo">Ville Neuvonen<span class="accent">.</span></a>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero" class="hero">
+            <div class="container hero-container">
+                <h1 class="hero-title">Building digital <br> <span class="text-gradient">experiences</span> that matter.</h1>
+                <p class="hero-subtitle">I'm a creative developer passionate about creating mobile applications and pixel-perfect user interfaces that blend art and code.</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View Work</a>
+                    <a href="#contact" class="btn btn-outline">Contact Me</a>
+                </div>
+            </div>
+            <div class="hero-background"></div>
+        </section>
+
+        <section id="about" class="section about">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-content">
+                    <div class="about-image">
+                        <img src="profile.png" alt="Ville Neuvonen">
+                    </div>
+                    <div class="about-details">
+                        <div class="about-text">
+                            <p>Hello! I'm Ville, a developer based in Mikkeli. I have been studying software engineering at XAMK for 4 years, building a strong foundation in modern development practices.</p>
+                            <p>I am especially enthusiastic about creating mobile applications and user interfaces. My main focus is on building accessible, inclusive products and digital experiences that delight users.</p>
+                        </div>
+                        <div class="about-stats">
+                            <div class="stat-item">
+                                <span class="stat-number">4+</span>
+                                <span class="stat-label">Years of Software Engineering Studies</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">50+</span>
+                                <span class="stat-label">Projects Completed</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="section skills">
+            <div class="container">
+                <h2 class="section-title">Skills & Technologies</h2>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <h3 class="skill-category">Frontend</h3>
+                        <ul class="skill-list">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>TypeScript</li>
+                            <li>React</li>
+                            <li>Svelte</li>
+                            <li>Next.js</li>
+                            <li>SvelteKit</li>
+                            <li>Tailwind CSS</li>
+                        </ul>
+                    </div>
+                    <div class="skill-card">
+                        <h3 class="skill-category">Backend</h3>
+                        <ul class="skill-list">
+                            <li>Node.js</li>
+                            <li>Express</li>
+                            <li>Python</li>
+                            <li>PostgreSQL</li>
+                            <li>MongoDB</li>
+                            <li>Supabase</li>
+                        </ul>
+                    </div>
+                    <div class="skill-card">
+                        <h3 class="skill-category">Tools</h3>
+                        <ul class="skill-list">
+                            <li>Git & GitHub</li>
+                            <li>VS Code</li>
+                            <li>Postman</li>
+                            <li>Robot Framework</li>
+                            <li>Google Gemini</li>
+                            <li>ChatGPT</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section projects">
+            <div class="container">
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <article class="project-card">
+                        <div class="project-image">
+                            <!-- Placeholder for project image -->
+                            <div class="img-placeholder" style="background: linear-gradient(45deg, #3b82f6, #8b5cf6);"></div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">E-Commerce Dashboard</h3>
+                            <p class="project-description">A comprehensive dashboard for managing online stores, featuring real-time analytics, inventory management, and order processing.</p>
+                            <ul class="project-tags">
+                                <li>React</li>
+                                <li>Tailwind</li>
+                                <li>Node.js</li>
+                            </ul>
+                            <div class="project-links">
+                                <a href="#" class="link-icon" aria-label="GitHub">GitHub</a>
+                                <a href="#" class="link-icon" aria-label="Live Demo">Live Demo</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 2 -->
+                    <article class="project-card">
+                        <div class="project-image">
+                             <div class="img-placeholder" style="background: linear-gradient(45deg, #f59e0b, #ef4444);"></div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Task Management App</h3>
+                            <p class="project-description">A productivity application designed to help teams collaborate efficiently, with features like drag-and-drop boards and time tracking.</p>
+                            <ul class="project-tags">
+                                <li>Vue.js</li>
+                                <li>Firebase</li>
+                                <li>Sass</li>
+                            </ul>
+                            <div class="project-links">
+                                <a href="#" class="link-icon" aria-label="GitHub">GitHub</a>
+                                <a href="#" class="link-icon" aria-label="Live Demo">Live Demo</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 3 -->
+                    <article class="project-card">
+                        <div class="project-image">
+                             <div class="img-placeholder" style="background: linear-gradient(45deg, #10b981, #3b82f6);"></div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Portfolio V1</h3>
+                            <p class="project-description">My previous portfolio site, showcasing my early work and growth as a developer. Built with vanilla HTML/CSS.</p>
+                            <ul class="project-tags">
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>JavaScript</li>
+                            </ul>
+                            <div class="project-links">
+                                <a href="#" class="link-icon" aria-label="GitHub">GitHub</a>
+                                <a href="#" class="link-icon" aria-label="Live Demo">Live Demo</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section contact">
+            <div class="container contact-container">
+                <div class="contact-text">
+                    <h2 class="section-title">Get In Touch</h2>
+                    <p>I'm currently looking for possibilities as a junior engineer or intern. My inbox is always open, so whether you have a question or just want to say hi, I'll try my best to get back to you!</p>
+                    <a href="mailto:hello@example.com" class="btn btn-primary">Say Hello</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Ville Neuvonen. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#">GitHub</a>
+                <a href="#">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
