@@ -4,8 +4,8 @@
 - JavaScript
 - TypeScript
 - React
-- Svelte
 - Next.js
+- Svelte
 - SvelteKit
 - Tailwind CSS
 
@@ -21,6 +21,7 @@
 - Git & GitHub
 - VS Code
 - Postman
+- SQL Developer
 - Robot Framework
 - Google Gemini
 - ChatGPT

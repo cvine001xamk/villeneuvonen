@@ -1,27 +1,197 @@
 [
   {
-    "course": "Data Structures and Algorithms",
+    "course": "Basic programming skills",
     "credits": 5,
     "grade": 5
   },
   {
-    "course": "Web Development",
-    "credits": 5,
-    "grade": 5
-  },
-  {
-    "course": "Mobile Application Development",
+    "course": "Markup languages",
     "credits": 5,
     "grade": 4
   },
   {
-    "course": "Database and API Architecture",
+    "course": "Software development environments",
     "credits": 5,
     "grade": 5
   },
   {
-    "course": "Software Testing and QA",
+    "course": "Image processing and kinetic animation",
+    "credits": 5,
+    "grade": 5
+  },
+  {
+    "course": "Discrete mathematics 1",
+    "credits": 5,
+    "grade": 5
+  },
+  {
+    "course": "Application programming 1",
+    "credits": 5,
+    "grade": 5
+  },
+  {
+    "course": "User interfaces",
+    "credits": 5,
+    "grade": 5
+  },
+  {
+    "course": "Video and audio editing",
+    "credits": 5,
+    "grade": 5
+  },
+  {
+    "course": "Data management and visualization",
+    "credits": 5,
+    "grade": 5
+  },
+  {
+    "course": "Finnish communication skills",
+    "credits": 5,
+    "grade": null
+  },
+  {
+    "course": "Advanced programming skills",
+    "credits": 5,
+    "grade": 5
+  },
+  {
+    "course": "User experience and usability",
+    "credits": 5,
+    "grade": 3
+  },
+  {
+    "course": "Discrete mathematics 2",
+    "credits": 5,
+    "grade": 5
+  },
+  {
+    "course": "Databases 1",
+    "credits": 5,
+    "grade": 5
+  },
+  {
+    "course": "Graphic design",
+    "credits": 5,
+    "grade": 5
+  },
+  {
+    "course": "Application programming 2",
     "credits": 5,
     "grade": 4
+  },
+  {
+    "course": "Games and gamification",
+    "credits": 5,
+    "grade": 5
+  },
+  {
+    "course": "Service design",
+    "credits": 5,
+    "grade": 5
+  },
+  {
+    "course": "Software development business",
+    "credits": 5,
+    "grade": 5
+  },
+  {
+    "course": "Professional English",
+    "credits": 5,
+    "grade": 5
+  },
+  {
+    "course": "Application programming 3",
+    "credits": 5,
+    "grade": 3
+  },
+  {
+    "course": "Software testing",
+    "credits": 5,
+    "grade": 5
+  },
+  {
+    "course": "Databases 2",
+    "credits": 5,
+    "grade": 5
+  },
+  {
+    "course": "Research and development skills",
+    "credits": 5,
+    "grade": null
+  },
+  {
+    "course": "Professional Swedish",
+    "credits": 5,
+    "grade": 4
+  },
+  {
+    "course": "Bachelor\u2019s thesis: Brainstorming and planning",
+    "credits": 5,
+    "grade": 5
+  },
+  {
+    "course": "Bachelor\u2019s thesis: Implementation",
+    "credits": 5,
+    "grade": 5
+  },
+  {
+    "course": "Bachelor\u2019s thesis: Reporting, assessment and presentation",
+    "credits": 5,
+    "grade": 5
+  },
+  {
+    "course": "Current course in application programming",
+    "credits": 10,
+    "grade": 2
+  },
+  {
+    "course": "Nutrition for sports and physical activity",
+    "credits": 5,
+    "grade": null
+  },
+  {
+    "course": "AWS Cloud Basics",
+    "credits": 5,
+    "grade": null
+  },
+  {
+    "course": "Cross-platform development with React Native",
+    "credits": 5,
+    "grade": 1
+  },
+  {
+    "course": "An introduction to Game Programming",
+    "credits": 5,
+    "grade": null
+  },
+  {
+    "course": "AI in Business",
+    "credits": 5,
+    "grade": 3
+  },
+  {
+    "course": "Data Structures and Algorithms with Python",
+    "credits": 5,
+    "grade": null
+  },
+  {
+    "course": "Microsoft Azure Fundamentals",
+    "credits": 3,
+    "grade": null
+  },
+  {
+    "course": "Advanced Python Programming",
+    "credits": 5,
+    "grade": 5
+  },
+  {
+    "course": "AI Programming",
+    "credits": 5,
+    "grade": 5
+  },
+  {
+    "course": "Green Programming",
+    "credits": 5,
+    "grade": null
   }
 ]
