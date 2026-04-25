@@ -1,0 +1,27 @@
+[
+  {
+    "course": "Data Structures and Algorithms",
+    "credits": 5,
+    "grade": 5
+  },
+  {
+    "course": "Web Development",
+    "credits": 5,
+    "grade": 5
+  },
+  {
+    "course": "Mobile Application Development",
+    "credits": 5,
+    "grade": 4
+  },
+  {
+    "course": "Database and API Architecture",
+    "credits": 5,
+    "grade": 5
+  },
+  {
+    "course": "Software Testing and QA",
+    "credits": 5,
+    "grade": 4
+  }
+]

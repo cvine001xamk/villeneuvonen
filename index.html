@@ -20,6 +20,7 @@
                 <ul class="nav-list">
                     <li><a href="#about" class="nav-link">About</a></li>
                     <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#studies" class="nav-link">Studies</a></li>
                     <li><a href="#projects" class="nav-link">Projects</a></li>
                     <li><a href="#contact" class="nav-link">Contact</a></li>
                 </ul>
@@ -82,70 +83,41 @@
             </div>
         </section>
 
+        <section id="studies" class="section studies">
+            <div class="container">
+                <div class="section-header-flex">
+                    <h2 class="section-title">Academic Studies</h2>
+                    <div class="studies-average" id="studies-average">
+                        <!-- Loaded dynamically -->
+                    </div>
+                </div>
+                
+                <div class="studies-list-container">
+                    <ul class="studies-list" id="studies-list">
+                        <!-- Content loaded from studies.json -->
+                        <p>Loading...</p>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
         <section id="projects" class="section projects">
             <div class="container">
-                <h2 class="section-title">Featured Projects</h2>
-                <div class="projects-grid">
-                    <!-- Project 1 -->
-                    <article class="project-card">
-                        <div class="project-image">
-                            <!-- Placeholder for project image -->
-                            <div class="img-placeholder" style="background: linear-gradient(45deg, #3b82f6, #8b5cf6);"></div>
-                        </div>
-                        <div class="project-content">
-                            <h3 class="project-title">E-Commerce Dashboard</h3>
-                            <p class="project-description">A comprehensive dashboard for managing online stores, featuring real-time analytics, inventory management, and order processing.</p>
-                            <ul class="project-tags">
-                                <li>React</li>
-                                <li>Tailwind</li>
-                                <li>Node.js</li>
-                            </ul>
-                            <div class="project-links">
-                                <a href="#" class="link-icon" aria-label="GitHub">GitHub</a>
-                                <a href="#" class="link-icon" aria-label="Live Demo">Live Demo</a>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- Project 2 -->
-                    <article class="project-card">
-                        <div class="project-image">
-                             <div class="img-placeholder" style="background: linear-gradient(45deg, #f59e0b, #ef4444);"></div>
-                        </div>
-                        <div class="project-content">
-                            <h3 class="project-title">Task Management App</h3>
-                            <p class="project-description">A productivity application designed to help teams collaborate efficiently, with features like drag-and-drop boards and time tracking.</p>
-                            <ul class="project-tags">
-                                <li>Vue.js</li>
-                                <li>Firebase</li>
-                                <li>Sass</li>
-                            </ul>
-                            <div class="project-links">
-                                <a href="#" class="link-icon" aria-label="GitHub">GitHub</a>
-                                <a href="#" class="link-icon" aria-label="Live Demo">Live Demo</a>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- Project 3 -->
-                    <article class="project-card">
-                        <div class="project-image">
-                             <div class="img-placeholder" style="background: linear-gradient(45deg, #10b981, #3b82f6);"></div>
-                        </div>
-                        <div class="project-content">
-                            <h3 class="project-title">Portfolio V1</h3>
-                            <p class="project-description">My previous portfolio site, showcasing my early work and growth as a developer. Built with vanilla HTML/CSS.</p>
-                            <ul class="project-tags">
-                                <li>HTML</li>
-                                <li>CSS</li>
-                                <li>JavaScript</li>
-                            </ul>
-                            <div class="project-links">
-                                <a href="#" class="link-icon" aria-label="GitHub">GitHub</a>
-                                <a href="#" class="link-icon" aria-label="Live Demo">Live Demo</a>
-                            </div>
-                        </div>
-                    </article>
+                <div class="section-header-flex">
+                    <h2 class="section-title">Software Projects</h2>
+                    <div class="carousel-controls">
+                        <button id="prev-project" class="carousel-btn" aria-label="Previous project">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+                        </button>
+                        <button id="next-project" class="carousel-btn" aria-label="Next project">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="projects-carousel-container">
+                    <div class="projects-grid" id="projects-carousel">
+                        <!-- Projects will be dynamically loaded here -->
+                    </div>
                 </div>
             </div>
         </section>

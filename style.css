@@ -334,14 +334,154 @@ img {
     border-color: var(--accent-color);
 }
 
-/* Projects Section */
-.projects-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 2.5rem;
+/* Studies Section */
+.studies-average {
+    background: var(--surface-color);
+    padding: 0.5rem 1.5rem;
+    border-radius: 50px;
+    border: 1px solid var(--accent-color);
+    box-shadow: 0 0 15px var(--accent-glow);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
 }
 
+.studies-average .stat-number {
+    font-size: 1.5rem;
+    margin-bottom: 0;
+    color: var(--accent-color);
+    font-weight: 800;
+}
+
+.studies-average .stat-label {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+}
+
+.studies-list-container {
+    background: var(--surface-color);
+    border-radius: 16px;
+    border: 1px solid var(--border-color);
+    overflow: hidden;
+}
+
+.studies-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.study-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 2rem;
+    border-bottom: 1px solid var(--border-color);
+    transition: background 0.3s ease;
+}
+
+.study-item:last-child {
+    border-bottom: none;
+}
+
+.study-item:hover {
+    background: rgba(255, 255, 255, 0.02);
+}
+
+.study-course {
+    font-family: var(--font-heading);
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--text-primary);
+}
+
+.study-details {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.study-credits {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}
+
+.study-grade {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgba(56, 189, 248, 0.1);
+    color: var(--accent-color);
+    font-weight: 700;
+    font-family: var(--font-heading);
+}
+
+/* Projects Section */
+.section-header-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 3rem;
+}
+
+.section-header-flex .section-title {
+    margin-bottom: 0;
+}
+
+.carousel-controls {
+    display: flex;
+    gap: 1rem;
+}
+
+.carousel-btn {
+    background: var(--surface-color);
+    border: 1px solid var(--border-color);
+    color: var(--text-primary);
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.carousel-btn:hover {
+    background: var(--accent-color);
+    color: var(--bg-color);
+    border-color: var(--accent-color);
+    box-shadow: 0 0 15px var(--accent-glow);
+}
+
+.projects-carousel-container {
+    position: relative;
+    width: 100%;
+}
+
+.projects-grid {
+    display: flex;
+    gap: 2.5rem;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    padding-bottom: 2rem;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
+
+.projects-grid::-webkit-scrollbar {
+    display: none; /* Chrome, Safari and Opera */
+}
+
+
 .project-card {
+    min-width: 350px;
+    max-width: 400px;
+    flex: 0 0 auto;
+    scroll-snap-align: start;
     background: var(--surface-color);
     border-radius: 16px;
     overflow: hidden;

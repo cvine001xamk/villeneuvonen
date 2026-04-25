@@ -95,4 +95,113 @@ document.addEventListener('DOMContentLoaded', () => {
 
     loadMarkdown('content/about.md', 'about-content');
     loadMarkdown('content/skills.md', 'skills-content', true);
+
+    // Fetch and render studies
+    async function loadStudies() {
+        try {
+            const response = await fetch('content/studies.json');
+            if (!response.ok) throw new Error('Failed to load studies');
+            const studies = await response.json();
+            
+            const listElement = document.getElementById('studies-list');
+            const averageElement = document.getElementById('studies-average');
+            listElement.innerHTML = ''; 
+            
+            let totalGradePoints = 0;
+            let totalCredits = 0;
+
+            studies.forEach(study => {
+                totalGradePoints += study.grade * study.credits;
+                totalCredits += study.credits;
+
+                const li = document.createElement('li');
+                li.className = 'study-item';
+                li.innerHTML = `
+                    <div class="study-course">${study.course}</div>
+                    <div class="study-details">
+                        <span class="study-credits">${study.credits} cr</span>
+                        <div class="study-grade">${study.grade}</div>
+                    </div>
+                `;
+                listElement.appendChild(li);
+            });
+
+            // Calculate and display average
+            if (totalCredits > 0) {
+                const average = (totalGradePoints / totalCredits).toFixed(2);
+                averageElement.innerHTML = `
+                    <span class="stat-number">${average}</span>
+                    <span class="stat-label">Average Grade</span>
+                `;
+            } else {
+                averageElement.style.display = 'none';
+            }
+
+        } catch (error) {
+            console.error('Error loading studies:', error);
+            document.getElementById('studies-list').innerHTML = '<li>Error loading studies.</li>';
+        }
+    }
+
+    loadStudies();
+
+    // Fetch and render projects
+    async function loadProjects() {
+        try {
+            const response = await fetch('content/projects.json');
+            if (!response.ok) throw new Error('Failed to load projects');
+            const projects = await response.json();
+            
+            const carousel = document.getElementById('projects-carousel');
+            carousel.innerHTML = ''; // Clear fallback content
+            
+            projects.forEach(project => {
+                const article = document.createElement('article');
+                article.className = 'project-card';
+                
+                const tagsHtml = project.tags.map(tag => `<li>${tag}</li>`).join('');
+                
+                article.innerHTML = `
+                    <div class="project-image">
+                        <div class="img-placeholder" style="background: ${project.gradient};"></div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">${project.title}</h3>
+                        <p class="project-description">${project.description}</p>
+                        <ul class="project-tags">
+                            ${tagsHtml}
+                        </ul>
+                        <div class="project-links">
+                            <a href="${project.githubLink}" class="link-icon" aria-label="GitHub">GitHub</a>
+                            <a href="${project.demoLink}" class="link-icon" aria-label="Live Demo">Live Demo</a>
+                        </div>
+                    </div>
+                `;
+                
+                carousel.appendChild(article);
+            });
+        } catch (error) {
+            console.error('Error loading projects:', error);
+            document.getElementById('projects-carousel').innerHTML = '<p>Error loading projects.</p>';
+        }
+    }
+
+    loadProjects();
+
+    // Projects Carousel Controls
+    const carouselContainer = document.getElementById('projects-carousel');
+    const prevBtn = document.getElementById('prev-project');
+    const nextBtn = document.getElementById('next-project');
+
+    if (carouselContainer && prevBtn && nextBtn) {
+        const scrollAmount = 350 + 40; // card width + gap approx
+
+        prevBtn.addEventListener('click', () => {
+            carouselContainer.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+        });
+
+        nextBtn.addEventListener('click', () => {
+            carouselContainer.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+        });
+    }
 });
