@@ -700,4 +700,21 @@ img {
         width: 100%;
         text-align: center;
     }
+
+    .studies-summary {
+        justify-content: center;
+        gap: 0.5rem;
+    }
+
+    .studies-stat {
+        padding: 0.4rem 1rem;
+    }
+
+    .studies-stat .stat-number {
+        font-size: 1.25rem;
+    }
+
+    .study-credits {
+        display: none;
+    }
 }
