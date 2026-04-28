@@ -103,15 +103,15 @@ document.addEventListener('DOMContentLoaded', () => {
             if (!response.ok) throw new Error('Failed to load studies');
             const studies = await response.json();
             
+            // Sort courses alphabetically
+            studies.sort((a, b) => a.course.localeCompare(b.course));
+            
             const listElement = document.getElementById('studies-list');
-            const averageElement = document.getElementById('studies-average');
             listElement.innerHTML = ''; 
             
-            let totalGradePoints = 0;
             let totalCredits = 0;
 
             studies.forEach(study => {
-                totalGradePoints += study.grade * study.credits;
                 totalCredits += study.credits;
 
                 const li = document.createElement('li');
@@ -120,21 +120,15 @@ document.addEventListener('DOMContentLoaded', () => {
                     <div class="study-course">${study.course}</div>
                     <div class="study-details">
                         <span class="study-credits">${study.credits} cr</span>
-                        <div class="study-grade">${study.grade}</div>
                     </div>
                 `;
                 listElement.appendChild(li);
             });
 
-            // Calculate and display average
-            if (totalCredits > 0) {
-                const average = (totalGradePoints / totalCredits).toFixed(2);
-                averageElement.innerHTML = `
-                    <span class="stat-number">${average}</span>
-                    <span class="stat-label">Average Grade</span>
-                `;
-            } else {
-                averageElement.style.display = 'none';
+            // Display calculated credits
+            const totalCreditsEl = document.getElementById('total-credits');
+            if (totalCreditsEl) {
+                totalCreditsEl.textContent = totalCredits;
             }
 
         } catch (error) {
@@ -173,7 +167,6 @@ document.addEventListener('DOMContentLoaded', () => {
                         </ul>
                         <div class="project-links">
                             <a href="${project.githubLink}" class="link-icon" aria-label="GitHub">GitHub</a>
-                            <a href="${project.demoLink}" class="link-icon" aria-label="Live Demo">Live Demo</a>
                         </div>
                     </div>
                 `;

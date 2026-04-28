@@ -335,7 +335,14 @@ img {
 }
 
 /* Studies Section */
-.studies-average {
+.studies-summary {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.studies-stat {
     background: var(--surface-color);
     padding: 0.5rem 1.5rem;
     border-radius: 50px;
@@ -346,14 +353,14 @@ img {
     gap: 0.5rem;
 }
 
-.studies-average .stat-number {
+.studies-stat .stat-number {
     font-size: 1.5rem;
     margin-bottom: 0;
     color: var(--accent-color);
     font-weight: 800;
 }
 
-.studies-average .stat-label {
+.studies-stat .stat-label {
     font-size: 0.9rem;
     color: var(--text-secondary);
 }
@@ -374,7 +381,7 @@ img {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.5rem 2rem;
+    padding: 0.75rem 1.5rem;
     border-bottom: 1px solid var(--border-color);
     transition: background 0.3s ease;
 }
@@ -389,33 +396,20 @@ img {
 
 .study-course {
     font-family: var(--font-heading);
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: 500;
     color: var(--text-primary);
 }
 
 .study-details {
     display: flex;
-    gap: 2rem;
+    gap: 1rem;
     align-items: center;
 }
 
 .study-credits {
     color: var(--text-secondary);
-    font-size: 0.9rem;
-}
-
-.study-grade {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background: rgba(56, 189, 248, 0.1);
-    color: var(--accent-color);
-    font-weight: 700;
-    font-family: var(--font-heading);
+    font-size: 0.85rem;
 }
 
 /* Projects Section */

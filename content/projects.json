@@ -1,7 +1,15 @@
 [
   {
-    "title": "E-Commerce Dashboard",
-    "description": "A comprehensive dashboard for managing online stores, featuring real-time analytics, inventory management, and order processing.",
+    "title": "Rya Rug Designing App",
+    "description": "###",
+    "tags": ["Svelte", "OpenWeather API", "CSS Variables"],
+    "githubLink": "#",
+    "demoLink": "#",
+    "gradient": "linear-gradient(45deg, #ec4899, #8b5cf6)"
+  },
+  {
+    "title": "Training Logbook App",
+    "description": "###",
     "tags": ["React", "Tailwind", "Node.js"],
     "githubLink": "#",
     "demoLink": "#",
@@ -9,26 +17,18 @@
   },
   {
     "title": "Task Management App",
-    "description": "A productivity application designed to help teams collaborate efficiently, with features like drag-and-drop boards and time tracking.",
+    "description": "###",
     "tags": ["Vue.js", "Firebase", "Sass"],
     "githubLink": "#",
     "demoLink": "#",
     "gradient": "linear-gradient(45deg, #f59e0b, #ef4444)"
   },
   {
-    "title": "Portfolio V1",
-    "description": "My previous portfolio site, showcasing my early work and growth as a developer. Built with vanilla HTML/CSS.",
+    "title": "Portfolio site",
+    "description": "###",
     "tags": ["HTML", "CSS", "JavaScript"],
     "githubLink": "#",
     "demoLink": "#",
     "gradient": "linear-gradient(45deg, #10b981, #3b82f6)"
-  },
-  {
-    "title": "Weather App",
-    "description": "A beautiful and responsive weather application using a public API to show current forecasts and 7-day trends.",
-    "tags": ["Svelte", "OpenWeather API", "CSS Variables"],
-    "githubLink": "#",
-    "demoLink": "#",
-    "gradient": "linear-gradient(45deg, #ec4899, #8b5cf6)"
   }
 ]
