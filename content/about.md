@@ -1,3 +1,1 @@
-Hello! I'm Ville, a developer based in Mikkeli. I have been studying software engineering at XAMK for 4 years, building a strong foundation in modern development practices.
-
-I am especially enthusiastic about creating mobile applications and user interfaces. My main focus is on building accessible, inclusive products and digital experiences that delight users.
+Hi, I'm Ville, a software engineering student based in Mikkeli, Finland. I've been studying software engineering since 2022 and have developed a strong interest in front-end and mobile development, where I enjoy creating intuitive and engaging user experiences. Along the way, I've also gained experience in backend development and software testing, giving me a well-rounded understanding of the development process.

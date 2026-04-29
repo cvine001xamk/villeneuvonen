@@ -249,6 +249,34 @@ img {
     margin-bottom: 1.5rem;
     color: var(--text-secondary);
     font-size: 1.1rem;
+    line-height: 1.85;
+}
+
+.about-text p:first-child {
+    border-left: 3px solid var(--accent-color);
+    padding-left: 1.25rem;
+}
+
+.about-text a {
+    color: var(--accent-color);
+    font-weight: 500;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.about-text a::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background: var(--accent-color);
+    transition: width 0.3s ease;
+}
+
+.about-text a:hover::after {
+    width: 100%;
 }
 
 .about-stats {
@@ -579,6 +607,12 @@ img {
     color: var(--text-secondary);
     font-size: 1.25rem;
     margin-bottom: 3rem;
+}
+
+.contact-links {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
 }
 
 /* Footer */
