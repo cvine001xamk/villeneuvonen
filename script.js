@@ -145,11 +145,27 @@ document.addEventListener('DOMContentLoaded', () => {
                 article.className = 'project-card';
 
                 const tagsHtml = project.tags.map(tag => `<li>${tag}</li>`).join('');
+                const hasScreenshots = project.screenshots && project.screenshots.length > 0;
+
+                let imageHtml;
+                if (hasScreenshots) {
+                    const slides = project.screenshots.map((src, i) =>
+                        `<img src="${src}" alt="${project.title} screenshot ${i + 1}" class="slide${i === 0 ? ' active' : ''}">`
+                    ).join('');
+
+                    const dots = project.screenshots.length > 1
+                        ? `<div class="slide-dots">${project.screenshots.map((_, i) =>
+                            `<button class="slide-dot${i === 0 ? ' active' : ''}" aria-label="Screenshot ${i + 1}"></button>`
+                        ).join('')}</div>`
+                        : '';
+
+                    imageHtml = `<div class="project-image slideshow">${slides}${dots}</div>`;
+                } else {
+                    imageHtml = `<div class="project-image"><div class="img-placeholder" style="background: ${project.gradient};"></div></div>`;
+                }
 
                 article.innerHTML = `
-                    <div class="project-image">
-                        <div class="img-placeholder" style="background: ${project.gradient};"></div>
-                    </div>
+                    ${imageHtml}
                     <div class="project-content">
                         <h3 class="project-title">${project.title}</h3>
                         <p class="project-description">${project.description}</p>
@@ -164,10 +180,41 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 carousel.appendChild(article);
             });
+
+            initSlideshows();
         } catch (error) {
             console.error('Error loading projects:', error);
             document.getElementById('projects-carousel').innerHTML = '<p>Error loading projects.</p>';
         }
+    }
+
+    function initSlideshows() {
+        document.querySelectorAll('.slideshow').forEach(slideshow => {
+            const slides = slideshow.querySelectorAll('.slide');
+            const dots = slideshow.querySelectorAll('.slide-dot');
+            if (slides.length <= 1) return;
+
+            let current = 0;
+
+            function goTo(index) {
+                slides[current].classList.remove('active');
+                dots[current].classList.remove('active');
+                current = index;
+                slides[current].classList.add('active');
+                dots[current].classList.add('active');
+            }
+
+            dots.forEach((dot, i) => {
+                dot.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    goTo(i);
+                });
+            });
+
+            setInterval(() => {
+                goTo((current + 1) % slides.length);
+            }, 4000);
+        });
     }
 
     loadProjects();

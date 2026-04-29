@@ -4,27 +4,31 @@
     "description": "A creative tool that transforms personal photographs into customizable rya rug patterns. Users can upload an image, and the app processes it into a simplified, color-mapped design suitable for rug making. It provides adjustable parameters such as color palette, resolution, and pattern density, enabling users to fine-tune the final design before exporting it as a guide for crafting.",
     "tags": ["Svelte", "Canvas API", "Image Processing"],
     "githubLink": "https://github.com/cvine001xamk/ryijyapp",
-    "gradient": "linear-gradient(45deg, #ec4899, #8b5cf6)"
+    "gradient": "linear-gradient(45deg, #ec4899, #8b5cf6)",
+    "screenshots": []
   },
   {
     "title": "Household Task Manager",
     "description": "A task management application designed specifically for recurring household chores. The app prioritizes tasks based on urgency and frequency, allowing users to define custom intervals. It automatically updates task priority over time, helping users stay on top of responsibilities and maintain a balanced routine with minimal manual tracking.",
     "tags": ["SvelteKit", "LocalStorage", "CSS"],
     "githubLink": "https://github.com/cvine001xamk/muistilista_svelte",
-    "gradient": "linear-gradient(45deg, #f59e0b, #ef4444)"
+    "gradient": "linear-gradient(45deg, #f59e0b, #ef4444)",
+    "screenshots": ["screenshots/taskmanager_1.png", "screenshots/taskmanager_2.png"]
   },
   {
     "title": "Strength Training Logger",
     "description": "An exercise tracking application focused on strength training. Users can log workouts, monitor progress over time, and analyze performance trends. The app also provides intelligent weight recommendations based on previous sessions, helping users progressively overload safely and consistently while optimizing their training routine.",
     "tags": ["HTML", "CSS", "JavaScript", "IndexedDB"],
     "githubLink": "https://github.com/cvine001xamk/traininglog",
-    "gradient": "linear-gradient(45deg, #3b82f6, #8b5cf6)"
+    "gradient": "linear-gradient(45deg, #3b82f6, #8b5cf6)",
+    "screenshots": []
   },
   {
     "title": "Software Engineering Portfolio",
     "description": "A personal portfolio website showcasing my work, technical skills, and development experience as a software engineering student. The site highlights selected projects, provides insight into my problem-solving approach, and serves as a central hub for demonstrating my growth, interests, and capabilities to potential collaborators and employers.",
     "tags": ["HTML", "CSS", "JavaScript"],
     "githubLink": "https://github.com/cvine001xamk/villeneuvonen",
-    "gradient": "linear-gradient(45deg, #10b981, #3b82f6)"
+    "gradient": "linear-gradient(45deg, #10b981, #3b82f6)",
+    "screenshots": ["screenshots/portfolio_1.png"]
   }
 ]
