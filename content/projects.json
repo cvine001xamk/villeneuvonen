@@ -13,7 +13,7 @@
     "tags": ["SvelteKit", "LocalStorage", "CSS"],
     "githubLink": "https://github.com/cvine001xamk/muistilista_svelte",
     "gradient": "linear-gradient(45deg, #f59e0b, #ef4444)",
-    "screenshots": ["screenshots/taskmanager_1.png", "screenshots/taskmanager_2.png"]
+    "screenshots": ["screenshots/taskmanager_1.png", "screenshots/taskmanager_2.png", "screenshots/taskmanager_3.png"]
   },
   {
     "title": "Strength Training Logger",
@@ -21,7 +21,7 @@
     "tags": ["HTML", "CSS", "JavaScript", "IndexedDB"],
     "githubLink": "https://github.com/cvine001xamk/traininglog",
     "gradient": "linear-gradient(45deg, #3b82f6, #8b5cf6)",
-    "screenshots": []
+    "screenshots": ["screenshots/traininglog_1.png", "screenshots/traininglog_2.png", "screenshots/traininglog_3.png"]
   },
   {
     "title": "Software Engineering Portfolio",
