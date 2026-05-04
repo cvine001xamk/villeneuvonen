@@ -173,7 +173,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             ${tagsHtml}
                         </ul>
                         <div class="project-links">
-                            <a href="${project.githubLink}" class="link-icon" aria-label="GitHub">GitHub</a>
+                            ${project.githubLink ? `<a href="${project.githubLink}" class="link-icon" aria-label="GitHub">GitHub</a>` : `<span class="private-repo-notification">Private Repository</span>`}
                         </div>
                     </div>
                 `;

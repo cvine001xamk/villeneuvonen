@@ -3,9 +3,13 @@
     "title": "Rya Rug Designer App",
     "description": "A creative tool that transforms personal photographs into customizable rya rug patterns. Users can upload an image, and the app processes it into a simplified, color-mapped design suitable for rug making. It provides adjustable parameters such as color palette, resolution, and pattern density, enabling users to fine-tune the final design before exporting it as a guide for crafting.",
     "tags": ["Svelte", "Canvas API", "Image Processing"],
-    "githubLink": "https://github.com/cvine001xamk/ryijyapp",
     "gradient": "linear-gradient(45deg, #ec4899, #8b5cf6)",
-    "screenshots": []
+    "screenshots": [
+      "screenshots/ryadesigner_1.jpeg",
+      "screenshots/ryadesigner_2.jpeg",
+      "screenshots/ryadesigner_3.jpeg",
+      "screenshots/ryadesigner_4.jpeg"
+    ]
   },
   {
     "title": "Household Task Manager",
